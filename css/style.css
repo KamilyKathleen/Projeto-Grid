@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("../img/background.jpg");
     background-size: cover;
@@ -28,6 +32,31 @@ body {
 
 .grid-item-4 {
     grid-column: 2 / span 2;
+    float: right;
+}
+
+.dot {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: inline-block;
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-left {
+    float: left;
+    width: 25%;
+}
+
+.col-right {
+    float: right;
+    width: 75%;
 }
 
 @media only screen and (max-width: 900px) {
